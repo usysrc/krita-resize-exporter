@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=krita-resize-exporter
+X-Python-2-Compatible=false
+X-Krita-Manual=myPluginManual.html
+Name=Resize Exporter
+Comment=Resizes and exports as PNG.
