@@ -1,1 +1,1 @@
-from resizeexporter import *
+from .rexpo import *
