@@ -23,11 +23,7 @@ class MyExtension(Extension):
         if doc is not None:
             doc.scaleImage(int(doc.width()/10), int(doc.height()/10), int(doc.xRes()), int(doc.yRes()),"Bilinear")
             if doc.name() in self.cache:
-                doc.setBatchmode(True)
                 exportParameters = InfoObject()
-                exportParameters.setProperty("alpha", True)
-                exportParameters.setProperty("compression", 1)
-                exportParameters.setProperty("indexed", False)
                 doc.exportImage(self.cache[doc.name()], exportParameters)
                 doc.scaleImage(int(doc.width()*10), int(doc.height()*10), int(doc.xRes()), int(doc.yRes()),"Bilinear")
                 return
